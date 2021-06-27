@@ -240,7 +240,7 @@ module.exports.run = async (bot, message, args, serverData) => {
                         .addField("Genre", moviePages[page - 1].genre, true)
                         .addField("Runtime", moviePages[page - 1].runtime, true)
                         .addField("Release", moviePages[page - 1].release, true)
-                        .addField("IMDB Ratnig", moviePages[page - 1].imdbRating, true)
+                        .addField("IMDB Rating", moviePages[page - 1].imdbRating, true)
                         .addField("RT Rating", moviePages[page - 1].rtRating, true)
                         .addField("Box Office", moviePages[page - 1].boxOffice, true)
                         .setFooter(`Page ${page} of ${moviePages.length}`);
