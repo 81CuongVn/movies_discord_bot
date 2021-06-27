@@ -3,23 +3,6 @@ const axios = require('axios').default;
 const serverModels = require('../models/serverSchema');
 require('dotenv').config();
 
-class moviePage {
-    constructor(movie) {
-        this.title = movie.Title,
-            this.description = movie.Plot,
-            this.image = (movie.Poster != 'N/A') ? movie.Poster : '',
-            this.actors = movie.Actors,
-            this.genre = movie.Genre,
-            this.runtime = movie.Runtime,
-            this.release = movie.Released,
-            this.imdbRating = movie.imdbRating,
-            this.rtRating = (movie.Ratings.find(el => el.Source == 'Rotten Tomatoes') != null) ?
-                movie.Ratings.find(el => el.Source == 'Rotten Tomatoes').Value : 'N/A',
-            this.boxOffice = movie.BoxOffice,
-            this.imdbID = movie.imdbID
-    };
-}
-
 module.exports.run = async (bot, message, args, serverData) => {
     const embed = new Discord.MessageEmbed()
         .setTitle('Help')
