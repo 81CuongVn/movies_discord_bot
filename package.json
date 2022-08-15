@@ -14,7 +14,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "fs": "0.0.1-security",
-    "mongoose": "^5.12.15",
+    "mongoose": "^5.13.14",
     "request": "^2.88.2"
   }
 }
